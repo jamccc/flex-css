@@ -6,33 +6,99 @@
 </head>
 <style>
     .box {
+        margin: 20px;
         border: 1px solid black;
         display: flex;
+        /*主轴方向*/
         /*flex-direction:row;*/
         /*flex-direction:row-reverse;*/
         /*flex-direction:column;*/
         /*flex-direction:column-reverse;*/
         width: 400px;
+        height: 400px;
+        /*是否换行*/
         /*flex-wrap:nowrap;*/
-        /*flex-wrap:wrap;*/
+        flex-wrap: wrap;
         /*flex-wrap: wrap-reverse;*/
+
+
+        /*主轴方向和是否换行的简写*/
+        /*flex-flow: row nowrap;*/
+        /*flex-flow: row wrap;*/
+        /*flex-flow: row wrap-reverse;*/
+
+        /*flex-flow: row-reverse nowrap;*/
+        /*flex-flow: row-reverse wrap;*/
+        /*flex-flow: row-reverse wrap-reverse;*/
+
+        /*flex-flow: column nowrap;*/
+        /*flex-flow: column wrap;*/
+        /*flex-flow: column wrap-reverse;*/
+
+        /*flex-flow: column-reverse nowrap;*/
+        /*flex-flow: column-reverse wrap;*/
+        /*flex-flow: column-reverse wrap-reverse;*/
     }
 
     .item {
         border: 1px solid red;
         height: 100px;
         width: 100px;
+    }
 
+    .box2 {
+        border: 1px solid black;
+        width: 800px;
+        height: 800px;
+        display: flex;
+        flex-wrap: wrap;
+        /*主轴对齐方式*/
+        /*justify-content: flex-start;*/
+        /*justify-content: flex-end;*/
+        /*justify-content: center;*/
+        /*justify-content: space-around;*/
+        /*justify-content: space-between;*/
+
+        /*交叉轴对齐方式*/
+        align-items: flex-start;
+        /*align-items: flex-end;*/
+        /*align-items: center;*/
+        /*项目第一行的文字的基线对齐*/
+        /*align-items: baseline;*/
+        /*默认值，如果容器没有设置高度或者auto，那么将会占满整个容器的高度*/
+        /*align-items: stretch;*/
+
+        /*交叉轴多根轴线的对齐方式*/
+        /*align-content: flex-start;*/
+        /*align-content: flex-end;*/
+        /*align-content: center;*/
+        /*align-content: space-between;*/
+        /*align-content: space-around;*/
+        /*align-content: stretch;*/
     }
 </style>
 <body>
 <div style="display: flex;justify-content: center;">
-    <div class="box">
+    <!--    <div class="box">-->
+    <!--        <div class="item">1</div>-->
+    <!--        <div class="item">2</div>-->
+    <!--        <div class="item">3</div>-->
+    <!--        <div class="item">4</div>-->
+    <!--        <div class="item">5</div>-->
+    <!--    </div>-->
+    <div class="box2">
         <div class="item">1</div>
         <div class="item">2</div>
         <div class="item">3</div>
         <div class="item">4</div>
         <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
     </div>
 </div>
 </body>
